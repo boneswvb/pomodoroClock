@@ -1,0 +1,133 @@
+html {
+  height: 100%;
+  background-image: url("http://res.cloudinary.com/wimvb/image/upload/v1510496470/bground5_hn3ue2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+body {
+  color: blue;
+  font-family: "lobster", sans-serif;
+  text-align: center;
+}
+
+h1, h2 { font-weight: normal; }
+i { margin-right: 8px !important; }
+p { margin: 0; }
+
+.container {
+  width: 700px;
+  height: 700px;
+  margin: 4em auto 0;
+  border: 3px solid blue;
+  border-radius: 50%;
+  position: relative;
+}
+
+.title {
+  font-size: 4.5em;
+  margin-bottom: .8em;
+  margin-top: 100px;
+}
+
+.session-control {
+  margin-left: 110px;
+  float: left;
+}
+
+.break-control {
+  margin-right: 110px;
+  float: right;
+}
+
+.inline { display: inline; }
+
+.settingsBtn {
+  color: blue;
+  background-color: transparent;
+  font-size: 2.3em;
+  border: none;
+}
+
+.numbers {
+  font-size: 2.5em;
+  padding: .3em;
+}
+
+#clock {
+  margin: 170px auto 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  width: 500px;
+}
+
+#clock h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+#clock .numbers { font-size: 4em; }
+#timer { margin-bottom: 23px; }
+#pause, #resume { display: none; }
+
+.btn, .settingsBtn {
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: blue;
+  background-color: transparent;
+  font-size: 1.1em;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: .65em .5em .5em;
+  margin-left: 7px;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
+}
+
+footer {
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+footer a {
+  color: blue;
+  font-family: "lobster", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .container {
+    border: none;
+    width: 90vw;
+    margin-top: 0;
+    overflow: visible;
+  }
+  .title {
+    margin-top: 30px;
+    font-size: 3em;
+  }
+  .session-control,
+  .break-control {
+    float: none;
+    margin: 0 0 2em;
+  }
+  #clock {
+    width: 90vw;
+    margin: 2em 0 0;
+  }
+  #clock h2 {
+    font-size: 2em;
+  }
+}
